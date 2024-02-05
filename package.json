@@ -1,0 +1,15 @@
+{
+  "name": "recipe-page-main",
+  "version": "1.0.0",
+  "description": "A perfect recipe for taste seekers !",
+  "main": "index.js",
+  "scripts": {
+    "compile:css": "node-sass sass/main.scss app.css",
+    "watch:css": "node-sass sass/main.scss app.css -w"
+  },
+  "author": "musread",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
