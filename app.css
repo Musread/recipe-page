@@ -20,7 +20,21 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1rem;
+  height: 100vh;
+  min-height: 100vh;
+  line-height: 1.4rem;
+  color: var(--wenge-brown);
+  background-color: var(--eggshell); }
+  @media only screen and (max-width: 23.4375em) {
+    body {
+      line-height: 2rem; } }
+
+.u-margin-left-medium {
+  margin-left: 2rem; }
+
+.u-margin-left-small {
+  margin-left: 1rem; }
 
 .attribution {
   font-size: 11px;
@@ -28,3 +42,130 @@ body {
 
 .attribution a {
   color: #3e52a3; }
+
+.container {
+  min-height: inherit;
+  margin: 6rem auto 0;
+  padding-bottom: 5rem;
+  max-width: 50rem; }
+  @media only screen and (max-width: 23.4375em) {
+    .container {
+      margin: 0;
+      padding-bottom: 0; } }
+
+.recipe {
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  @media only screen and (max-width: 23.4375em) {
+    .recipe {
+      padding: 0;
+      border-radius: 0; } }
+  .recipe__heading-primary, .recipe__heading-secondary {
+    font-family: "Young Serif", sans-serif; }
+  .recipe__heading-primary {
+    display: flex;
+    color: var(--dark-charcoal);
+    font-size: 2.5rem;
+    line-height: 3rem; }
+    @media only screen and (max-width: 23.4375em) {
+      .recipe__heading-primary {
+        align-self: center; } }
+  .recipe__heading-secondary {
+    color: var(--nutmeg);
+    font-size: 2rem;
+    margin-bottom: 1.6rem; }
+  .recipe__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    @media only screen and (max-width: 23.4375em) {
+      .recipe__content {
+        padding: 2rem; } }
+  .recipe__image {
+    width: 100%;
+    flex: 1 0 100%;
+    object-fit: cover;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 23.4375em) {
+      .recipe__image {
+        border-radius: 0; } }
+  .recipe__presentation {
+    font-size: 1rem;
+    color: var(--wenge-brown);
+    line-height: 1.4rem; }
+  .recipe__preparation {
+    background-color: var(--rose-white);
+    padding: 2rem;
+    border-radius: 1rem; }
+  .recipe__preparation-title {
+    color: var(--dark-raspberry);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem; }
+  .recipe__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem; }
+  .recipe__item {
+    position: relative; }
+    .recipe__item::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      top: 50%;
+      left: -1.5rem;
+      transform: translateY(-50%);
+      border-radius: 50%; }
+    .recipe__item span {
+      font-weight: 700;
+      color: var(--dark-charcoal); }
+    .recipe__item--violet::before {
+      background-color: var(--dark-raspberry); }
+    .recipe__item--brown::before {
+      background-color: var(--nutmeg); }
+  .recipe__section:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--light-grey); }
+  .recipe__ingredients-items {
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .recipe__ingredients-item {
+    padding-left: 1rem; }
+    .recipe__ingredients-item::marker {
+      color: var(--nutmeg); }
+  .recipe__instructions-items {
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; }
+  .recipe__instructions-item {
+    padding-left: 1rem; }
+    .recipe__instructions-item::marker {
+      color: var(--nutmeg);
+      font-weight: 700; }
+    .recipe__instructions-item span {
+      font-weight: 700; }
+  .recipe__nutrition-table {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+  .recipe__nutrition-item {
+    display: flex;
+    padding: 1rem 2rem; }
+    .recipe__nutrition-item:not(:last-child) {
+      border-bottom: 1px solid var(--light-grey); }
+  .recipe__nutrition-label, .recipe__nutrition-value {
+    flex: 1 0 50%; }
+  .recipe__nutrition-text {
+    margin-bottom: 1rem; }
+  .recipe__nutrition-value {
+    color: var(--nutmeg);
+    font-weight: 700; }

@@ -5,3 +5,15 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.container {
+  min-height: inherit;
+  margin: 6rem auto 0;
+  padding-bottom: 5rem;
+  max-width: 50rem;
+
+  @include respond {
+    margin: 0;
+    padding-bottom: 0;
+  }
+}
