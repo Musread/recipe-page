@@ -36,7 +36,7 @@ And this is for **mobile screens**:
 
 ### Links
 
-- Live Site URL: https://musread.github.io/four-card-section/
+- Live Site URL: https://musread.github.io/recipe-page/
 
 ## My process
 
